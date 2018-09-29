@@ -122,4 +122,4 @@ Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
 ## 注意事项
 最新源码请查看: https://github.com/modular2 。 <br>
 新建文件或项目目录名称不能有空格。 <br>
-使用虚拟机时，VMware Workstation环境mbed import时有python工具问题，建议使用Oracle VM VirtualBox环境。 
+使用虚拟机时，VMware Workstation环境mbed import时，有python工具问题，建议使用Oracle VM VirtualBox环境。 
