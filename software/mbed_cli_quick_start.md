@@ -114,7 +114,12 @@ Total Flash memory (text + data): 62664(+62664) bytes
 Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
 </code></pre>
 编译结束生成helloworld.bin文件。
-                                        
+
+## 联机烧录
+1. 将modular-2设备通过USB(DAPLink接口)连接开发电脑。
+2. 将生成的bin文件复制到modular-2生成的存储盘符中。
+3. 按复位键启动嵌入式程序。
+
 ## 管理多个Mbed项目
 Mbed CLI管理多个Mbed项目时，只需要在本地保留一套Mbed OS的源码，就可以让多个项目共享使用。
 ### 操作示例（目录位置可修改）
@@ -169,10 +174,7 @@ Compile [  0.5%]: NanostackRfPhyAtmel.cpp
 
 如果编译成功的话，在你的projects 目录下会出现一个BUILD 文件夹和project1 子文件夹。其中就有一个 project1.bin .
 
-## 联机烧录
-1. 将modular-2设备通过USB(DAPLink接口)连接开发电脑。
-2. 将生成的bin文件复制到modular-2生成的存储盘符中。
-3. 按复位键启动嵌入式程序。
+
 
 ## 注意事项
 最新源码请查看: https://github.com/modular2 。 <br>
