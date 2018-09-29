@@ -23,3 +23,6 @@ mbed config –L检查配置
 如果没有配置下GCC的路径（你安装GNU ARM的路径），请按如下命令设置：
 <pre><code>mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"</code></pre>
 
+## 快速例子
+<pre><code>mbed import https://github.com/modular2/helloworld
+cd helloworld</code></pre>
