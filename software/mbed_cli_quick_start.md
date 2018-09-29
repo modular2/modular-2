@@ -155,7 +155,7 @@ int main() {
     }
 }
 </code></pre>
-#### 编译
+#### 编译代码
 <pre><code>C:\projects>mbed compile -t GCC_ARM -m NUCLEO_F429ZI --source project1 --source mbed-os --build BUILD/project1
 [mbed] WARNING: Could not find mbed program in current path "C:\projects".
 [mbed] WARNING: You can fix this by calling "mbed new ." in the root of your program.
