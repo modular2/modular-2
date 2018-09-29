@@ -8,3 +8,13 @@ Mbed CLI是Arm Mbed OS的命令行工具，它可以代码仓库版本控制、�
 我们在modular-2应用程序的开发过程中，采取将代码保存在github上，使用Mbed CLI实现程序编译的方法。
 ### Mbed CLI 安装
 Windows安装比较简单，直接到官网（https://os.mbed.com/docs/latest/tools/installation-and-setup.html)下载安装，下载链接http://mbed-os.s3-eu-west-1.amazonaws.com/builds/Mbed_installer_v0.4.7.exe
+### LINUX安装
+需要先安装以下工具
++	Python - mbed CLI 是用Python写的，并且在 version 2.7.13 上做过完整测试，不兼容Python3.x
++ Git - version 1.9.5 or later
++ Mercurial - version 2.2.2 or later
++ GNU ARM - ARM GCC交叉编译工具
+$ git clone https://github.com/ARMmbed/mbed-cli
+$ python setup.py install
+参考链接https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/dev_tools/cli/
+
