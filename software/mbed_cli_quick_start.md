@@ -140,7 +140,6 @@ C:\projects>mbed new project2
 #### 添加应用程序的源码
 以project1项目为例，向project1目录里面添加一个main.cpp ，例如：helloworld闪灯程序。
 <pre><code>#include "mbed.h"
-
 DigitalOut myled(PC_6);
 
 int main() {
@@ -152,11 +151,9 @@ int main() {
 }
 </code></pre>
 #### 编译
-<pre><code>C:\projects>mbed compile -t GCC_ARM -m NUCLEO_F429ZI --source project1 --source
-mbed-os --build BUILD/project1
+<pre><code>C:\projects>mbed compile -t GCC_ARM -m NUCLEO_F429ZI --source project1 --source mbed-os --build BUILD/project1
 [mbed] WARNING: Could not find mbed program in current path "C:\projects".
-[mbed] WARNING: You can fix this by calling "mbed new ." in the root of your pro
-gram.
+[mbed] WARNING: You can fix this by calling "mbed new ." in the root of your program.
 ---
 [mbed] Auto-installing missing Python modules...
 Building project project1 (NUCLEO_F429ZI, GCC_ARM)
