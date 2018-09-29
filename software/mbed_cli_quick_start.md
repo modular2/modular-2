@@ -114,11 +114,37 @@ Total Flash memory (text + data): 62664(+62664) bytes
 Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
 </code></pre>
 编译结束生成helloworld.bin文件。
-                                          
+                                        
+## 管理多个Mbed项目
+使用Mbed CLI管理多个Mbed项目时，只需要在本地保留一套Mbed OS的源码，多个项目共享。
++ 建立一个projects 文件夹。
++ 导入mbed-os，操作系统源码
++ 配置projects/mbed-os为全局变量MBED-OS-DIR  
++ 建立一个项目projects
+
+$ cd <projects directory>$ mbed import mbed-os$ mbed config -G MBED_OS_DIR <projects directory>/mbed-os[mbed] <projects directory>/mbed-os now set as global MBED_OS_DIR$ mbed new project1[mbed] Creating new program "project1" (git)$ mbed new project2[mbed] Creating new program "project2" (git)
+
+添加应用程序的源码 
+
+建立好projects项目后，你可以向里面添加一个main.cpp ，例如一个LED 闪灯程序。
+
+#include "mbed.h" DigitalOut myled(PC_6);
+int main() {
+while(1) {        myled = 1; // LED is ON        wait(1.0); // 200 ms        myled = 0; // LED is OFF        wait(1.0); // 1 sec    }}
+
+编译
+
+
+mbed compile -t GCC_ARM -m NUCLEO_F429ZI  --source project1  --source mbed-os --build BUILD/project1
+
+
+如果编译成功的话，在你的projects 目录下会出现一个BUILD 文件夹和project1 子文件夹。其中就有一个 project1.bin .
+
 ## 联机烧录
 1. 将modular-2设备通过USB(DAPLink接口)连接开发电脑。
 2. 将生成的bin文件复制到modular-2生成的存储盘符中。
 3. 按复位键启动嵌入式程序。
+
 ## 注意事项
 最新源码请查看: https://github.com/modular2 。 <br>
 新建文件或项目目录名称不能有空格。 <br>
