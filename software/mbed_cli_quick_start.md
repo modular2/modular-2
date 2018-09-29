@@ -90,6 +90,27 @@ Compile [  1.5%]: FlashIAP.cpp
 Compile [  1.7%]: I2CSlave.cpp
 Compile [  1.8%]: I2C.cpp
 ......
+Link: helloworld
+Elf2Bin: helloworld
+| Module           |         .text |       .data |          .bss |
+|------------------|---------------|-------------|---------------|
+| [fill]           |     148(+148) |       3(+3) |       21(+21) |
+| [lib]\c.a        | 25037(+25037) | 2472(+2472) |       89(+89) |
+| [lib]\gcc.a      |   3168(+3168) |       0(+0) |         0(+0) |
+| [lib]\misc       |     252(+252) |     16(+16) |       28(+28) |
+| main.o           |       98(+98) |       4(+4) |       28(+28) |
+| mbed-os\drivers  |     283(+283) |       4(+4) |     100(+100) |
+| mbed-os\events   |   1611(+1611) |       0(+0) |   1576(+1576) |
+| mbed-os\features |   2070(+2070) |       0(+0) | 12692(+12692) |
+| mbed-os\hal      |   1685(+1685) |       4(+4) |       68(+68) |
+| mbed-os\platform |   2843(+2843) |   260(+260) |     133(+133) |
+| mbed-os\rtos     | 12404(+12404) |   168(+168) |   6073(+6073) |
+| mbed-os\targets  | 10129(+10129) |       5(+5) |     680(+680) |
+| Subtotals        | 59728(+59728) | 2936(+2936) | 21488(+21488) |
+Total Static RAM memory (data + bss): 24424(+24424) bytes
+Total Flash memory (text + data): 62664(+62664) bytes
+
+Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
 </code></pre>
 编译结束生成helloworld.bin文件。
                                           
