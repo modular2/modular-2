@@ -117,13 +117,25 @@ Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
                                         
 ## 管理多个Mbed项目
 Mbed CLI管理多个Mbed项目时，只需要在本地保留一套Mbed OS的源码，就可以让多个项目共享使用。
-### 建立一个projects 文件夹
-### 导入mbed-os，操作系统源码
-### 配置projects/mbed-os为全局变量MBED-OS-DIR  
-### 建立一个项目projects
+#### 建立一个projects 文件夹
+<pre><code>C:\>mkdir projects
+C:\>cd projects</code></pre>
+#### 导入mbed-os，操作系统源码
+<pre><code>C:\projects>mbed import mbed-os
+[mbed] Importing program "mbed-os" from "https://github.com/ARMmbed/mbed-os" at latest revision in the current branch
+[mbed] Auto-installing missing Python modules...</code></pre>
+#### 配置projects/mbed-os为全局变量MBED-OS-DIR
+<pre><code>C:\projects>mbed config -G MBED_OS_DIR C:\projects\mbed-os
+[mbed] C:\projects\mbed-os now set as global MBED_OS_DIR</code></pre>
+#### 建立一个项目projects
+<pre><code>C:\projects>mbed new project1
+[mbed] Creating new program "project1" (git)
+[mbed] Auto-installing missing Python modules...
 
-$ cd <projects directory>$ mbed import mbed-os$ mbed config -G MBED_OS_DIR <projects directory>/mbed-os[mbed] <projects directory>/mbed-os now set as global MBED_OS_DIR$ mbed new project1[mbed] Creating new program "project1" (git)$ mbed new project2[mbed] Creating new program "project2" (git)
-
+C:\projects>mbed new project2
+[mbed] Creating new program "project2" (git)
+[mbed] Auto-installing missing Python modules...
+</code></pre>
 添加应用程序的源码 
 
 建立好projects项目后，你可以向里面添加一个main.cpp ，例如一个LED 闪灯程序。
