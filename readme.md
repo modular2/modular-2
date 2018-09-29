@@ -1,6 +1,5 @@
 # 关于modular-2
 &ensp;&ensp;modular-2 是一台基于cortex-M 处理器的模块化电脑，它由一块STM32F429 为主的主板和丰富的IO扩展板，网络扩展板，以及微型扩展模块构成。主板搭载Arm 公司Mbed OS 操作系统。该电脑功能比arduino 更强大，比树莓PI更方便地开发。该产品适用于快速开发小型智能设备，例如专用控制器，网关，大数据采集终端，物联网终端等。  
-**产品照** 
 ![modular-2](https://github.com/modular2/modular2/raw/master/images/M-2.png)  
 ## 特点
  **易学，不费力气可以学会大多数功能**   
