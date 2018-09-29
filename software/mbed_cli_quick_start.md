@@ -14,10 +14,14 @@ Windows安装比较简单，直接到官网（https://os.mbed.com/docs/latest/to
 + Git - version 1.9.5 or later
 + Mercurial - version 2.2.2 or later
 + GNU ARM - ARM GCC交叉编译工具
-'$ git clone https://github.com/ARMmbed/mbed-cli
+(```)
+$ git clone https://github.com/ARMmbed/mbed-cli
 $ python setup.py install'
 参考链接https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/dev_tools/cli/
+(```)
 ## Windows Mbed CLI运行 
 WIN键+R键，进入命令行，输入mbed运行。 
 显示Mbed CLI的常见参数。
+mbed config –L检查配置
+如果没有配置下GCC的路径（你安装GNU ARM的路径），请按如下命令设置：mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"
 
