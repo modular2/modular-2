@@ -13,12 +13,12 @@ Windows安装比较简单，直接到官网（https://os.mbed.com/docs/latest/to
 +	Python - mbed CLI 是用Python写的，并且在 version 2.7.13 上做过完整测试，不兼容Python3.x
 + Git - version 1.9.5 or later
 + Mercurial - version 2.2.2 or later
-+ GNU ARM - ARM GCC交叉编译工具 
++ GNU ARM - ARM GCC交叉编译工具
 <pre><code>
 $ git clone https://github.com/ARMmbed/mbed-cli
 $ python setup.py install'
-参考链接https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/dev_tools/cli/
 </code></pre>
+参考链接https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/dev_tools/cli/ 
 ## Windows Mbed CLI运行 
 WIN键+R键，进入命令行，输入mbed运行。 
 显示Mbed CLI的常见参数。
