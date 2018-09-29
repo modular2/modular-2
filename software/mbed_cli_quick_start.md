@@ -60,4 +60,15 @@ Couldn't find valid mbed program in C:\</code></pre>
 [mbed] Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at rev#949cb49ab0a1
 [mbed] Auto-installing missing Python modules...
 C:\cd helloworld
-C:\helloworld\mbed compile –S //检查一下支持列表</code></pre>
+C:\helloworld>mbed compile -S//检查一下支持列表
+[mbed] Auto-installing missing Python modules...
+......
+| NUCLEO_F413ZH         | Supported | Supported | Supported | Supported | Supported |     -     | Supported | Supported |
+| NUCLEO_F429ZI         | Supported | Supported | Supported | Supported | Supported |     -     | Supported | Supported |
+| NUCLEO_F439ZI         | Supported | Supported | Supported | Supported | Supported |     -     | Supported | Supported |
+| NUCLEO_F446RE         | Supported | Supported | Supported | Supported | Supported |     -     | Supported | Supported |
+| NUCLEO_F446ZE         | Supported | Supported | Supported | Supported | Supported |     -     | Supported | Supported |
+| NUCLEO_F746ZG         | Supported | Supported | Supported | Supported | Supported |     -     | Supported | Supported |
+......
+Supported targets: 270
+</code></pre>
