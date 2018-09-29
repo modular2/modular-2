@@ -73,7 +73,24 @@ C:\helloworld>mbed compile -S//检查一下支持列表
 Supported targets: 270
 </code></pre>
 针对Modular-2进行编译时，开发板选择使用相同CPU的NUCLEO_F429ZI。
-<pre><code>C:\helloworld>mbed compile -t GCC_ARM -m NUCLEO_F429ZI</code></pre>
+<pre><code>C:\helloworld>mbed compile -t GCC_ARM -m NUCLEO_F429ZI
+[mbed] Auto-installing missing Python modules...
+Building project helloworld (NUCLEO_F429ZI, GCC_ARM)
+Scan: helloworld
+Scan: env
+Compile [  0.2%]: mbed_tz_context.c
+Compile [  0.3%]: AnalogIn.cpp
+Compile [  0.5%]: main.cpp
+Compile [  0.7%]: BusIn.cpp
+Compile [  0.8%]: BusInOut.cpp
+Compile [  1.0%]: BusOut.cpp
+Compile [  1.2%]: CAN.cpp
+Compile [  1.3%]: Ethernet.cpp
+Compile [  1.5%]: FlashIAP.cpp
+Compile [  1.7%]: I2CSlave.cpp
+Compile [  1.8%]: I2C.cpp
+......
+</code></pre>
 编译结束生成helloworld.bin文件。
                                           
 ## 联机烧录
