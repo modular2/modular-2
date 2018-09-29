@@ -13,8 +13,7 @@ Windows安装比较简单，官网（https://os.mbed.com/docs/latest/tools/insta
 + Git - version 1.9.5 or later
 + Mercurial - version 2.2.2 or later
 + GNU ARM - ARM GCC交叉编译工具
-<pre><code>
-$ git clone https://github.com/ARMmbed/mbed-cli
+<pre><code>$ git clone https://github.com/ARMmbed/mbed-cli
 $ python setup.py install'
 </code></pre>
 参考链接https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/dev_tools/cli/ 
@@ -22,7 +21,5 @@ $ python setup.py install'
 WIN键+R键，cmd回车进入命令行，输入mbed运行，将显示Mbed CLI的常见参数。
 mbed config –L检查配置
 如果没有配置下GCC的路径（你安装GNU ARM的路径），请按如下命令设置：
-<code>
-mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"
-</code>
+<pre><code>mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"</code></pre>
 
