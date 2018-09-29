@@ -77,10 +77,10 @@ mbed compile -t GCC_ARM -m NUCLEO_F429ZI
 编译结束生成helloworld.bin文件。
                                           
 ## 联机烧录
-1.将modular-2设备通过USB(DAPLink接口)连接开发电脑。
-2.将生成的bin文件复制到modular-2生成的存储盘符中。
-3.按复位键启动嵌入式程序。
+1. 将modular-2设备通过USB(DAPLink接口)连接开发电脑。
+2. 将生成的bin文件复制到modular-2生成的存储盘符中。
+3. 按复位键启动嵌入式程序。
 ## 注意事项
-最新源码请查看: https://github.com/modular2。
-新建文件或项目目录名称不能有空格。
-使用虚拟机时，VMware Workstation环境mbed import时有python工具问题，建议使用Oracle VM VirtualBox环境。
+最新源码请查看: https://github.com/modular2 。 
+新建文件或项目目录名称不能有空格。 
+使用虚拟机时，VMware Workstation环境mbed import时有python工具问题，建议使用Oracle VM VirtualBox环境。 
