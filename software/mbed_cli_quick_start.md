@@ -56,5 +56,6 @@ Couldn't find valid mbed program in C:\</code></pre>
 
 ## 快速例子
 <pre><code>mbed import https://github.com/modular2/helloworld
-cd helloworld</code></pre>
-<pre><code>mbed compile –S //检查一下支持列表</code></pre>
+</code></pre>
+<pre><code>cd helloworld
+mbed compile –S //检查一下支持列表</code></pre>
