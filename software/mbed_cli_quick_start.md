@@ -59,6 +59,5 @@ Couldn't find valid mbed program in C:\</code></pre>
 [mbed] Importing program "helloworld" from "https://github.com/modular2/helloworld" at latest revision in the current branch
 [mbed] Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at rev#949cb49ab0a1
 [mbed] Auto-installing missing Python modules...
-</code></pre>
-<pre><code>cd helloworld
-mbed compile –S //检查一下支持列表</code></pre>
+C:\cd helloworld
+C:\helloworld\mbed compile –S //检查一下支持列表</code></pre>
