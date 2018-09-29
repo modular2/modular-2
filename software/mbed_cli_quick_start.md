@@ -14,7 +14,9 @@ Windows安装比较简单，直接到官网（https://os.mbed.com/docs/latest/to
 + Git - version 1.9.5 or later
 + Mercurial - version 2.2.2 or later
 + GNU ARM - ARM GCC交叉编译工具
+<code>
 $ git clone https://github.com/ARMmbed/mbed-cli
 $ python setup.py install
+</code>
 参考链接https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/dev_tools/cli/
 
