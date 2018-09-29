@@ -117,6 +117,7 @@ Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
                                         
 ## 管理多个Mbed项目
 Mbed CLI管理多个Mbed项目时，只需要在本地保留一套Mbed OS的源码，就可以让多个项目共享使用。
+### 操作示例（目录位置可修改）
 #### 建立一个projects 文件夹
 <pre><code>C:\>mkdir projects
 C:\>cd projects</code></pre>
