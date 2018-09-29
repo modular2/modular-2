@@ -116,11 +116,11 @@ Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
 编译结束生成helloworld.bin文件。
                                         
 ## 管理多个Mbed项目
-使用Mbed CLI管理多个Mbed项目时，只需要在本地保留一套Mbed OS的源码，多个项目共享。
-+ 建立一个projects 文件夹。
-+ 导入mbed-os，操作系统源码
-+ 配置projects/mbed-os为全局变量MBED-OS-DIR  
-+ 建立一个项目projects
+Mbed CLI管理多个Mbed项目时，只需要在本地保留一套Mbed OS的源码，就可以让多个项目共享使用。
+### 建立一个projects 文件夹
+### 导入mbed-os，操作系统源码
+### 配置projects/mbed-os为全局变量MBED-OS-DIR  
+### 建立一个项目projects
 
 $ cd <projects directory>$ mbed import mbed-os$ mbed config -G MBED_OS_DIR <projects directory>/mbed-os[mbed] <projects directory>/mbed-os now set as global MBED_OS_DIR$ mbed new project1[mbed] Creating new program "project1" (git)$ mbed new project2[mbed] Creating new program "project2" (git)
 
