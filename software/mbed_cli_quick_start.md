@@ -73,7 +73,7 @@ C:\helloworld>mbed compile -S//检查一下支持列表
 Supported targets: 270
 </code></pre>
 针对Modular-2进行编译时，开发板选择使用相同CPU的NUCLEO_F429ZI。
-mbed compile -t GCC_ARM -m NUCLEO_F429ZI
+<pre><code>mbed compile -t GCC_ARM -m NUCLEO_F429ZI</code></pre>
 编译结束生成helloworld.bin文件。
                                           
 ## 联机烧录
