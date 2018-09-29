@@ -21,5 +21,8 @@ $ python setup.py install'
 ## Windows Mbed CLI运行 
 WIN键+R键，cmd回车进入命令行，输入mbed运行，将显示Mbed CLI的常见参数。
 mbed config –L检查配置
-如果没有配置下GCC的路径（你安装GNU ARM的路径），请按如下命令设置：mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"
+如果没有配置下GCC的路径（你安装GNU ARM的路径），请按如下命令设置：
+<pre><code>
+mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"
+</code></pre>
 
