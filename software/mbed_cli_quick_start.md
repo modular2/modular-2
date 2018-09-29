@@ -45,6 +45,12 @@ Commands:
 </code></pre>
 
 mbed config –L检查配置
+<pre><code>C:\>mbed config -L
+[mbed] Global config:
+GCC_ARM_PATH=C:\Program Files (x86)\GNU Tools ARM Embedded\6 2017-q2-update\bin
+
+[mbed] Local config (C:\):
+Couldn't find valid mbed program in C:\</code></pre>
 如果没有配置下GCC的路径（你安装GNU ARM的路径），请按如下命令设置：
 <pre><code>mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"</code></pre>
 
