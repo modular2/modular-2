@@ -1,4 +1,4 @@
-# IO pinBUS 定义
+# IO扩展板引脚定义
 modular-2 主板上有2个 16Pin的插座（CN2，CN3)，1个40pin 插座（CN1）,它们构成了72 pin 的连接总线，称为pinBUS。用于IO模块的扩展。 程序设计时，通过pinName 来定义外设。例如
 ```
 #include <mbed.h>
@@ -13,6 +13,6 @@ main()
 ## CN2，CN3 的pin定义
 ![pinBUS](https://github.com/modular2/modular2/raw/master/images/pinBUS.png)
 ## CN1 的pin定义
-# 网络扩展板的pinCOMBUS 定义
+# 网络扩展板引脚定义
 modular2上的网络扩展板有1个10pin 插座（CN4A），和一个12pin（CN4B） 
-![pinCOMBUS](https://github.com/modular2/modular2/raw/master/images/pinCOMBUS.png)
+![pinCOMBUS](https://github.com/modular2/modular2/raw/master/images/pinBUS2.png)
