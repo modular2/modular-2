@@ -170,11 +170,30 @@ Compile [  0.3%]: MCR20Drv.c
 Compile [  0.4%]: at24mac.cpp
 Compile [  0.5%]: NanostackRfPhyAtmel.cpp
 ......
+Link: project1
+Elf2Bin: project1
+| Module             |         .text |       .data |          .bss |
+|--------------------|---------------|-------------|---------------|
+| [fill]             |     183(+183) |       3(+3) |       21(+21) |
+| [lib]\c.a          | 25037(+25037) | 2472(+2472) |       89(+89) |
+| [lib]\gcc.a        |   3168(+3168) |       0(+0) |         0(+0) |
+| [lib]\misc         |     252(+252) |     16(+16) |       28(+28) |
+| mbed-os\components |       32(+32) |       0(+0) |         0(+0) |
+| mbed-os\drivers    |     261(+261) |       4(+4) |     100(+100) |
+| mbed-os\events     |   1609(+1609) |       0(+0) |   1572(+1572) |
+| mbed-os\features   |   2076(+2076) |       0(+0) | 12688(+12688) |
+| mbed-os\hal        |   1839(+1839) |       4(+4) |       68(+68) |
+| mbed-os\platform   |   2939(+2939) |   260(+260) |     133(+133) |
+| mbed-os\rtos       | 12212(+12212) |   168(+168) |   6053(+6053) |
+| mbed-os\targets    | 10271(+10271) |       5(+5) |     680(+680) |
+| project1\main.o    |       98(+98) |       4(+4) |       28(+28) |
+| Subtotals          | 59977(+59977) | 2936(+2936) | 21460(+21460) |
+Total Static RAM memory (data + bss): 24396(+24396) bytes
+Total Flash memory (text + data): 62913(+62913) bytes
+
+Image: BUILD/project1\project1.bin
 </code></pre>
-
-如果编译成功的话，在你的projects 目录下会出现一个BUILD 文件夹和project1 子文件夹。其中就有一个 project1.bin .
-
-
+如果编译成功，在projects目录下就会出现一个BUILD文件夹和project1子文件夹，project1.bin就是镜像文件，复制到modular-2生成的存储盘符中就可联机烧录。
 
 ## 注意事项
 最新源码请查看: https://github.com/modular2 。 <br>
