@@ -128,7 +128,7 @@ C:\>cd projects</code></pre>
 #### 配置projects/mbed-os为全局变量MBED-OS-DIR
 <pre><code>C:\projects>mbed config -G MBED_OS_DIR C:\projects\mbed-os
 [mbed] C:\projects\mbed-os now set as global MBED_OS_DIR</code></pre>
-#### 建立一个项目projects
+#### 建立项目project*
 <pre><code>C:\projects>mbed new project1
 [mbed] Creating new program "project1" (git)
 [mbed] Auto-installing missing Python modules...
@@ -137,19 +137,38 @@ C:\projects>mbed new project2
 [mbed] Creating new program "project2" (git)
 [mbed] Auto-installing missing Python modules...
 </code></pre>
-添加应用程序的源码 
+#### 添加应用程序的源码
+以project1项目为例，向project1目录里面添加一个main.cpp ，例如：helloworld闪灯程序。
+<pre><code>#include "mbed.h"
 
-建立好projects项目后，你可以向里面添加一个main.cpp ，例如一个LED 闪灯程序。
+DigitalOut myled(PC_6);
 
-#include "mbed.h" DigitalOut myled(PC_6);
 int main() {
-while(1) {        myled = 1; // LED is ON        wait(1.0); // 200 ms        myled = 0; // LED is OFF        wait(1.0); // 1 sec    }}
-
-编译
-
-
-mbed compile -t GCC_ARM -m NUCLEO_F429ZI  --source project1  --source mbed-os --build BUILD/project1
-
+    printf("Hello The wolrd!\n");
+    while(1) {
+        myled = !myled; 
+        wait(1.0); // 1 sec
+    }
+}
+</code></pre>
+#### 编译
+<pre><code>C:\projects>mbed compile -t GCC_ARM -m NUCLEO_F429ZI --source project1 --source
+mbed-os --build BUILD/project1
+[mbed] WARNING: Could not find mbed program in current path "C:\projects".
+[mbed] WARNING: You can fix this by calling "mbed new ." in the root of your pro
+gram.
+---
+[mbed] Auto-installing missing Python modules...
+Building project project1 (NUCLEO_F429ZI, GCC_ARM)
+Scan: project1
+Scan: mbed-os
+Scan: env
+Compile [  0.1%]: mbed_tz_context.c
+Compile [  0.3%]: MCR20Drv.c
+Compile [  0.4%]: at24mac.cpp
+Compile [  0.5%]: NanostackRfPhyAtmel.cpp
+......
+</code></pre>
 
 如果编译成功的话，在你的projects 目录下会出现一个BUILD 文件夹和project1 子文件夹。其中就有一个 project1.bin .
 
