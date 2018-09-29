@@ -19,10 +19,46 @@ $ python setup.py install'
 参考链接https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/dev_tools/cli/ 
 ## Windows Mbed CLI运行 
 WIN键+R键，cmd回车进入命令行，输入mbed运行，将显示Mbed CLI的常见参数。
+<pre><code>C:\>mbed
+usage: mbed [-h] [--version]             ...
+
+Command-line code management tool for ARM mbed OS - http://www.mbed.com
+version 1.7.2
+
+Use 'mbed <command> -h|--help' for detailed help.
+Online manual and guide available at https://github.com/ARMmbed/mbed-cli
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --version    print version number and exit
+
+Commands:
+
+    new        Create new mbed program or library
+    import     Import program from URL
+    add        Add library from URL
+    remove     Remove library
+    deploy     Find and add missing libraries
+    publish    Publish program or library
+    update     Update to branch, tag, revision or latest
+    ......
+</code></pre>
+
 mbed config –L检查配置
+<pre><code>C:\>mbed config -L
+[mbed] Global config:
+GCC_ARM_PATH=C:\Program Files (x86)\GNU Tools ARM Embedded\6 2017-q2-update\bin
+
+[mbed] Local config (C:\):
+Couldn't find valid mbed program in C:\</code></pre>
 如果没有配置下GCC的路径（你安装GNU ARM的路径），请按如下命令设置：
 <pre><code>mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"</code></pre>
 
 ## 快速例子
-<pre><code>mbed import https://github.com/modular2/helloworld
-cd helloworld</code></pre>
+<pre><code>C:\>mbed import https://github.com/modular2/helloworld
+[mbed] Importing program "helloworld" from "https://github.com/modular2/helloworld" at latest revision in the current branch
+[mbed] Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at rev#949cb49ab0a1
+[mbed] Auto-installing missing Python modules...
+</code></pre>
+<pre><code>cd helloworld
+mbed compile –S //检查一下支持列表</code></pre>
