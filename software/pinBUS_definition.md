@@ -9,10 +9,13 @@ main()
     wait(1);
 }
 ```
-每个IO模块都将说明它们所使用的相关pin，只有你了解了pin的定义才能够使用相关外围电路的类。 
+每个IO模块都将说明它们所使用的相关pin，只有你了解了pin的定义才能够使用相关外围电路的类。  
+## 图标
+![pinCOMBUS](https://github.com/modular2/modular2/raw/master/images/pinref.png)
 ## CN2，CN3 的pin定义
-![pinBUS](https://github.com/modular2/modular2/raw/master/images/pinBUS.png)
+![pinBUS](https://github.com/modular2/modular2/raw/master/images/PINBUS.png)
 ## CN1 的pin定义
+![pinCOMBUS](https://github.com/modular2/modular2/raw/master/images/PINBUS2.png)
 # 网络扩展板引脚定义
 modular2上的网络扩展板有1个10pin 插座（CN4A），和一个12pin（CN4B） 
-![pinCOMBUS](https://github.com/modular2/modular2/raw/master/images/pinBUS2.png)
+![pinCOMBUS](https://github.com/modular2/modular2/raw/master/images/pinCOMBUS.png)
