@@ -6,7 +6,7 @@ Mbed OS的在线Mbed编译环境实现使用浏览器进行Mbed的云端开发�
 ### 使用Mbed CLI命令行工具
 Mbed CLI是Arm Mbed OS的命令行工具，它可以代码仓库版本控制、依赖管理、代码发布、从其他地方获取代码、调用编译系统及其他。Mbed CLI可以管理多项目，也就是多个项目可以分享同一个Mbed OS的源代码。如果你采用github代码仓库的话，你只需要上传应用程序的代码，而不需要上传几百兆的Mbed OS在github上，同样可以实现代码分享和版本控制。<br />我们在modular-2应用程序的开发过程中，采取将代码保存在github上，使用Mbed CLI实现程序编译的方法。
 ### Mbed CLI 安装
-Windows安装比较简单，官网（https://os.mbed.com/docs/latest/tools/installation-and-setup.html) 直接下载安装。<br>下载链接http://mbed-os.s3-eu-west-1.amazonaws.com/builds/Mbed_installer_v0.4.7.exe <br>
+Windows安装比较简单，官网（https://os.mbed.com/docs/latest/tools/installation-and-setup.html) 直接下载安装。<br>下载链接http://mbed-os.s3-eu-west-1.amazonaws.com/builds/Mbed_installer_v0.4.7.exe <br><br>
 ![mbed cli setup 0.4.7](https://github.com/modular2/modular-2/raw/master/images/mbed_cli_setup_0.4.7.jpg)
 ### LINUX安装
 需要先安装以下工具
