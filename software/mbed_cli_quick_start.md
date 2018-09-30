@@ -127,7 +127,7 @@ Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
 [mbed] Auto-installing missing Python modules...
 Scan: helloworld
 </code></pre>
-Mbed CLI直接在项目目录helloworld下生成helloworld.uvprojx与其他一些配置文件，你可以直接用Keil uVision打开。
+Mbed CLI直接在项目目录helloworld下生成helloworld.uvprojx与其他配置文件，你可以直接用Keil uVision打开进行编译调试。
 
 ## 管理多个Mbed项目
 Mbed CLI管理多个Mbed项目时，只需要在本地保留一套Mbed OS的源码，就可以让多个项目共享使用。
