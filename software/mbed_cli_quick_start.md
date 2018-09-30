@@ -22,19 +22,14 @@ $ python setup.py install'
 WIN键+R键，cmd回车进入命令行，输入mbed运行，将显示Mbed CLI的常见参数。
 <pre><code>C:\>mbed
 usage: mbed [-h] [--version]             ...
-
 Command-line code management tool for ARM mbed OS - http://www.mbed.com
 version 1.7.2
-
 Use 'mbed <command> -h|--help' for detailed help.
 Online manual and guide available at https://github.com/ARMmbed/mbed-cli
-
 optional arguments:
   -h, --help   show this help message and exit
   --version    print version number and exit
-
 Commands:
-
     new        Create new mbed program or library
     import     Import program from URL
     add        Add library from URL
