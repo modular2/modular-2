@@ -2,12 +2,12 @@
 Mbed OS的在线Mbed编译环境实现使用浏览器进行Mbed的云端开发。对于初学者而言这是十分方便的，免去了许多开发环境的安装和配置，而且能方便地实现软件更新和发布，分享。但是在线编译的缺点也十分明显，就是需要良好的网络环境，当网络不通畅时，体验非常糟糕。<br />
 如果不使用在线编译，你可以有两个选择：<br />
 ### 在线IDE导出为第三方编译工具项目
-在线编译环境中建立应用程序的代码，通过export导出成第三方编译工具的项目，比如keil uvision项目。浏览器将转换好的项目自动下载下来，然后解压，使用keil工具编译。<br />
+在线编译环境中建立应用程序的代码，通过export导出成第三方编译工具的项目，比如keil uvision项目。浏览器将转换好的项目自动下载下来，然后解压，使用Keil工具编译。<br />
 ### 使用Mbed CLI命令行工具
 Mbed CLI是Arm Mbed OS的命令行工具，它可以代码仓库版本控制、依赖管理、代码发布、从其他地方获取代码、调用编译系统及其他。Mbed CLI可以管理多项目，也就是多个项目可以分享同一个Mbed OS的源代码。如果你采用github代码仓库的话，你只需要上传应用程序的代码，而不需要上传几百兆的Mbed OS在github上，同样可以实现代码分享和版本控制。<br />我们在modular-2应用程序的开发过程中，采取将代码保存在github上，使用Mbed CLI实现程序编译的方法。
 ### Mbed CLI 安装
 Windows安装比较简单，官网（https://os.mbed.com/docs/latest/tools/installation-and-setup.html) 直接下载安装。<br>下载链接http://mbed-os.s3-eu-west-1.amazonaws.com/builds/Mbed_installer_v0.4.7.exe <br><br>
-![mbed cli setup 0.4.7](https://github.com/modular2/modular-2/raw/master/images/mbed_cli_setup_0.4.7.jpg)
+![mbed cli setup 0.4.7](https://github.com/maximlab/modular-2/raw/master/software/screenshot/mbed_cli_setup_0.4.7.jpg)
 ### LINUX安装
 需要先安装以下工具
 +	Python - mbed CLI 是用Python写的，并且在 version 2.7.13 上做过完整测试，不兼容Python3.x
@@ -120,6 +120,15 @@ Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
 2. 将生成的bin文件复制到modular-2生成的存储盘符中。
 3. 按复位键启动嵌入式程序。
 
+## 导出为其他IDE工具项目
+如果你需要进一步进行调试工作，你可以将源文件导出为其他IDE工具的项目文件。Mbed CLI支持导出为Keil uVision, IAR Workbench, 使用GCC Arm编译器的Makefile，使用GCC Arm编译器的Eclipse项目。
+例如导出为uVision，你可以如下操作。 
+<pre><code>C:\helloworld>mbed export -i uvision -m NUCLEO_F429ZI
+[mbed] Auto-installing missing Python modules...
+Scan: helloworld
+</code></pre>
+Mbed CLI直接在项目目录helloworld下生成helloworld.uvprojx与其他配置文件，你可以直接用Keil uVision打开进行编译调试。
+
 ## 管理多个Mbed项目
 Mbed CLI管理多个Mbed项目时，只需要在本地保留一套Mbed OS的源码，就可以让多个项目共享使用。
 ### 操作示例（目录位置可修改）
@@ -146,7 +155,6 @@ C:\projects>mbed new project2
 以project1项目为例，向project1目录里面添加一个main.cpp ，例如：helloworld闪灯程序。
 <pre><code>#include "mbed.h"
 DigitalOut myled(PC_6);
-
 int main() {
     printf("Hello The wolrd!\n");
     while(1) {
@@ -193,9 +201,10 @@ Total Flash memory (text + data): 62913(+62913) bytes
 
 Image: BUILD/project1\project1.bin
 </code></pre>
-如果编译成功，在projects目录下就会出现一个BUILD文件夹和project1子文件夹，project1.bin就是镜像文件，复制到modular-2生成的存储盘符中就可联机烧录。
+如果编译成功，在projects目录下就会出现一个BUILD文件夹和project1子文件夹，project1.bin就是镜像文件，其他操作参考联机烧录。
 
 ## 注意事项
-最新源码请查看: https://github.com/modular2 。 <br>
 新建文件或项目目录名称不能有空格。 <br>
-使用虚拟机时，VMware Workstation环境mbed import时，有python工具问题，建议使用Oracle VM VirtualBox环境。 
+使用虚拟机时，VMware Workstation环境mbed import时，有python工具问题，建议使用Oracle VM VirtualBox环境。<br>
+更多modular-2源码例程: https://github.com/modular2  <br>
+更多Mbed CLI内容：https://github.com/ARMmbed/mbed-cli 
