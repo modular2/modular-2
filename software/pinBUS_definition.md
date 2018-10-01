@@ -10,12 +10,12 @@ DigitalOut red（PC_7);
 SPI spi(PF_9, PF_8, PF_7); // mosi, miso, sclk
 DigitalOut cs(PF_4);
 ```
-选择modular-2的SPI5.
+选择modular-2的SPI5。
 # 主板上使用的引脚
 + LED指示灯
 + SD card
 + EEPROM
-# IO扩展板引脚定义
+# I/O扩展板引脚定义
 modular-2主板上有2个16Pin的插座(CN2，CN3)，1个40pin插座(CN1),它们构成了72pin的连接总线，称为pinBUS。pinBUS用于I/O接口模块的扩展。  
 ## 图例
 ![引脚图例](https://github.com/maximlab/modular-2/blob/master/software/screenshot/Pins_Legend.jpg?raw=true)
@@ -25,7 +25,7 @@ modular-2主板上有2个16Pin的插座(CN2，CN3)，1个40pin插座(CN1),它们
 ![CN2引脚定义](https://github.com/maximlab/modular-2/blob/master/software/screenshot/CN2_HEADERS.jpg?raw=true)
 ## CN3引脚定义
 ![CN3引脚定义](https://github.com/maximlab/modular-2/blob/master/software/screenshot/CN3_HEADERS.jpg?raw=true)
-## CN4(网络扩展板)引脚定义
+# 网络扩展板引脚定义
 modular-2的网络扩展板有1个10pin插座(CN4A)，和一个12pin插座(CN4B)。  
 ![CN4引脚定义](https://github.com/maximlab/modular-2/blob/master/software/screenshot/CN4_HEADERS.jpg?raw=true)
 # 引脚的引用
