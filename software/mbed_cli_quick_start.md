@@ -127,7 +127,7 @@ Mbed CLI直接在项目目录helloworld下生成helloworld.uvprojx与其他配�
 打开项目后，在左侧项目结构中，右键项目名称进入[Options for Target 'helloworld']。在下图所示对话框中，勾选黄框、绿框中的选项，在红框内输入命令"fromelf --bin !L --output=helloworld.bin"（bin文件建议使用项目名称)，完成后按ok确认。<br><br>
 ![Keil uVision编译](https://github.com/maximlab/modular-2/blob/master/software/screenshot/uvision5_options_output_bin_file.jpg?raw=true)
 ![Keil uVision编译](https://github.com/maximlab/modular-2/blob/master/software/screenshot/uvision5_compile_helloworld.jpg?raw=true)<br>
-点击上图蓝框内的Rebuild，进行编译，最后在项目目录下生成helloworld.bin镜像文件，其他操作参考联机烧录。
+点击上图蓝圈内的Rebuild，进行编译，最后在项目目录下生成helloworld.bin镜像文件，其他操作参考联机烧录。
 
 
 ## 管理多个Mbed项目
