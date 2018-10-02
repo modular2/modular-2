@@ -18,16 +18,16 @@ DigitalOut cs(PF_4);
 # I/O扩展板引脚定义
 modular-2主板上有2个16Pin的插座(CN2，CN3)，1个40pin插座(CN1),它们构成了72pin的连接总线，称为pinBUS。pinBUS用于I/O接口模块的扩展。  
 ## 图例
-![引脚图例](https://github.com/maximlab/modular-2/blob/master/software/screenshot/Pins_Legend.jpg?raw=true)
+![引脚图例](https://github.com/maximlab/modular-2/blob/master/software/images/Pins_Legend.jpg?raw=true)
 ## CN1引脚定义
-![CN1引脚定义](https://github.com/maximlab/modular-2/blob/master/software/screenshot/CN1_HEADERS.jpg?raw=true)
+![CN1引脚定义](https://github.com/maximlab/modular-2/blob/master/software/images/CN1_HEADERS.jpg?raw=true)
 ## CN2引脚定义
-![CN2引脚定义](https://github.com/maximlab/modular-2/blob/master/software/screenshot/CN2_HEADERS.jpg?raw=true)
+![CN2引脚定义](https://github.com/maximlab/modular-2/blob/master/software/images/CN2_HEADERS.jpg?raw=true)
 ## CN3引脚定义
-![CN3引脚定义](https://github.com/maximlab/modular-2/blob/master/software/screenshot/CN3_HEADERS.jpg?raw=true)
+![CN3引脚定义](https://github.com/maximlab/modular-2/blob/master/software/images/CN3_HEADERS.jpg?raw=true)
 # 网络扩展板引脚定义
 modular-2的网络扩展板有1个10pin插座(CN4A)，和一个12pin插座(CN4B)。  
-![CN4引脚定义](https://github.com/maximlab/modular-2/blob/master/software/screenshot/CN4_HEADERS.jpg?raw=true)
+![CN4引脚定义](https://github.com/maximlab/modular-2/blob/master/software/images/CN4_HEADERS.jpg?raw=true)
 # 引脚的引用
 Mbed程序设计时，通过pinName来定义外设。例如： 
 ```
