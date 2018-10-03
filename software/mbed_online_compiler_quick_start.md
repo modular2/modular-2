@@ -4,7 +4,7 @@ Mbed OS的在线Mbed编译环境实现使用浏览器进行Mbed的云端开发�
 #### 申请Arm Mbed账号
 前往[os.mbed.com](https://os.mbed.com/)，注册申请[Arm Mbed账号](https://os.mbed.com/account/signup/)。<br />
 #### 设置开发平台环境
-前往[https://os.mbed.com/compiler](https://os.mbed.com/compiler)，使用注册账号登录。<br>在下图中，可以在底部设置界面显示语言。在红框中，点击进入硬件平台添加界面。
+前往[https://os.mbed.com/compiler](https://os.mbed.com/compiler)，使用注册账号登录。<br>如下图所示，可以在底部设置界面显示语言。在红框中，点击进入硬件平台添加界面。
 ![设置语言](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_setup_1.jpg?raw=true)<br>
 ![添加硬件平台](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_setup_2.jpg?raw=true)<br>
 如上图所示，首先点击Add Board进入[https://os.mbed.com/platforms/](https://os.mbed.com/platforms/)，进入使用相同CPU的NUCLEO_F429ZI详细页面。<br>
