@@ -8,7 +8,7 @@ Mbed OS的在线Mbed编译环境实现使用浏览器进行Mbed的云端开发�
 ![设置语言](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_setup_1.jpg?raw=true)<br>
 ![添加硬件平台](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_setup_2.jpg?raw=true)<br>
 如上图所示，首先点击Add Board进入[https://os.mbed.com/platforms/](https://os.mbed.com/platforms/)，进入使用相同CPU的NUCLEO_F429ZI详细页面。<br>
-最后点击右侧[Add to your Mbed Compiler]，如下图所示，完成硬件平台的添加。<br>
+最后点击右侧[Add to your Mbed Compiler]，完成硬件平台的添加。<br>
 ![Add to your Mbed Compiler](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_setup_3.jpg?raw=true)
 
 ### 第一个程序
@@ -22,7 +22,7 @@ Mbed OS的在线Mbed编译环境实现使用浏览器进行Mbed的云端开发�
 2. 将生成的bin文件复制到modular-2生成的存储盘符中。
 3. 按复位键启动嵌入式程序。
 ### 导出为其他IDE工具项目
-如果你需要进一步进行调试工作，你可以将源文件导出为其他IDE工具的项目文件。
+如果你需要进一步进行调试工作，你可以将源文件导出为其他IDE工具的项目文件。<br>
 例如：需要导出为uVision时，可以在平台编译环境中，右键点击项目名称，点击弹出菜单中Export Program，在弹出的对话框中，选择Export Toolchain为uvision5-armc5后，点击Exportn确认导出，浏览器将自动下载其他IDE工具项目zip包。以上操作可参考下图。<br>
 ![导出至其他IDE项目](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_export_program.jpg?raw=true)
 ![选择导出的IDE项目](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_export_toolchain.jpg?raw=true)
