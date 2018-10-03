@@ -1,8 +1,8 @@
 ## Mbeb在线编译器使用指南
-Mbed OS的在线Mbed编译环境实现使用浏览器进行Mbed的云端开发。对于初学者而言这是十分方便的，免去了许多开发环境的安装和配置，而且能方便地实现软件更新和发布，分享。<br />
+Mbed OS的在线Mbed编译环境实现使用浏览器进行Mbed的云端开发。对于初学者而言这是十分方便的，免去了许多开发环境的安装和配置，而且能方便地实现软件更新和发布，分享。
 ### 开始
 #### 申请Arm Mbed账号
-前往[os.mbed.com](https://os.mbed.com/)，注册申请[Arm Mbed账号](https://os.mbed.com/account/signup/)。<br />
+前往[os.mbed.com](https://os.mbed.com/)，注册申请[Arm Mbed账号](https://os.mbed.com/account/signup/)。
 #### 设置开发平台环境
 前往[https://os.mbed.com/compiler](https://os.mbed.com/compiler)，使用注册账号登录。<br>如下图所示，可以在底部设置界面显示语言。在红框中，点击进入硬件平台添加界面。
 ![设置语言](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_setup_1.jpg?raw=true)<br>
