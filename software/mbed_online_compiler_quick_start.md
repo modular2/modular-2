@@ -12,10 +12,10 @@ Mbed OS的在线Mbed编译环境实现使用浏览器进行Mbed的云端开发�
 ![Add to your Mbed Compiler](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_setup_3.jpg?raw=true)
 
 ### 第一个程序
-![导入代码](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_import_code.jpg?raw=true)<br><br>
-如上图所示，在平台编译环境中，点击左上角红框中的[import]，点击显示页面里绿框中的[Click here]链接，弹出Import Program对话框，Source URL中输入[https://github.com/modular2/helloworld](https://github.com/modular2/helloworld)，其他如下图所示，点击Import导入。<br><br>
-![导入helloworld](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_import_helloworld.jpg?raw=true)<br><br>
-打开hellowolrd中的main.cpp，点击Compile，开始编译，编译成功后自动下载生成的bin文件。 <br><br>
+![导入代码](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_import_code.jpg?raw=true)<br>
+如上图所示，在平台编译环境中，点击左上角红框中的[import]，点击显示页面里绿框中的[Click here]链接，弹出Import Program对话框，Source URL中输入[https://github.com/modular2/helloworld](https://github.com/modular2/helloworld)，其他如下图所示，点击Import导入。<br>
+![导入helloworld](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_import_helloworld.jpg?raw=true)<br>
+打开hellowolrd中的main.cpp，点击Compile，开始编译，编译成功后自动下载生成的bin文件。 <br>
 ![生成bin文件](https://github.com/maximlab/modular-2/blob/master/software/screenshots/mbed_online_compile_build_bin.jpg?raw=true)
 ### 联机烧录
 1. 将modular-2设备通过USB(DAPLink接口)连接开发电脑。
