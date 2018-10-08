@@ -9,4 +9,6 @@ M2-MultiComm 是一块多通信接口IO扩展板。
 + 1 路I2C接口
 + 1 路SPI 接口
 # 内部接线图
-![M2-MultiComm](./images/M2-MultiComm.png)
+![M2-Multicomm](./images/M2-Multicomm.png) 
+# 应用 
+
