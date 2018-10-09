@@ -9,5 +9,12 @@
 - [M2-RS485-DRV8803 模块](./M2-RS485-DRV8803.md)
 - [M2-MultiComm 模块](./M2-MultiComm.md)
 # 网络扩展板资料
+- M2-WiFi-A 模块
+- M2-LoRa 模块
+- M2-NBiot-A 模块
+- M2-NBiot-B 模块
+- M2-SerialDiary 模块
+- M2-EtherDiary 模块
+- M2-GPRS-GPS 模块
 
 
