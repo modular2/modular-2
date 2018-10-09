@@ -10,17 +10,19 @@ Windows安装比较简单，官网（https://os.mbed.com/docs/latest/tools/insta
 ![mbed cli setup 0.4.7](./screenshots/mbed_cli_setup_0.4.7.jpg)
 ### LINUX安装
 需要先安装以下工具
-+	Python - mbed CLI 是用Python写的，并且在 version 2.7.13 上做过完整测试，不兼容Python3.x
++ Python - mbed CLI 是用Python写的，并且在 version 2.7.13 上做过完整测试，不兼容Python3.x
 + Git - version 1.9.5 or later
 + Mercurial - version 2.2.2 or later
 + GNU ARM - ARM GCC交叉编译工具
-```$ git clone https://github.com/ARMmbed/mbed-cli
-$ python setup.py install'
-</code></pre>
+```
+$ git clone https://github.com/ARMmbed/mbed-cli
+$ python setup.py install
+```
 参考链接https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/dev_tools/cli/ 
 ## Windows Mbed CLI运行 
 WIN键+R键，cmd回车进入命令行，输入mbed运行，将显示Mbed CLI的常见参数。
-<pre><code>C:\>mbed
+```
+C:\>mbed
 usage: mbed [-h] [--version]             ...
 Command-line code management tool for ARM mbed OS - http://www.mbed.com
 version 1.7.2
@@ -40,17 +42,22 @@ Commands:
     ......
 ```
 mbed config –L检查配置
-```C:\>mbed config -L
+```
+C:\>mbed config -L
 [mbed] Global config:
 GCC_ARM_PATH=C:\Program Files (x86)\GNU Tools ARM Embedded\6 2017-q2-update\bin
 
 [mbed] Local config (C:\):
-Couldn't find valid mbed program in C:\```
+Couldn't find valid mbed program in C:\
+```
 如果没有配置下GCC的路径（你安装GNU ARM的路径），请按如下命令设置：
-```mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"```
+```
+mbed config --global GCC_ARM_PATH "C:\Program Files （x86）\ GNU Tools ARM Embedded\6 2017-q2-update\bin"
+```
 
 ## 快速例子
-```C:\>mbed import https://github.com/modular2/helloworld
+```
+C:\>mbed import https://github.com/modular2/helloworld
 [mbed] Importing program "helloworld" from "https://github.com/modular2/helloworld" at latest revision in the current branch
 [mbed] Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at rev#949cb49ab0a1
 [mbed] Auto-installing missing Python modules...
@@ -68,7 +75,8 @@ C:\helloworld>mbed compile -S//检查一下支持列表
 Supported targets: 270
 ```
 针对Modular-2进行编译时，开发板选择使用相同CPU的NUCLEO_F429ZI。
-```C:\helloworld>mbed compile -t GCC_ARM -m NUCLEO_F429ZI
+```
+C:\helloworld>mbed compile -t GCC_ARM -m NUCLEO_F429ZI
 [mbed] Auto-installing missing Python modules...
 Building project helloworld (NUCLEO_F429ZI, GCC_ARM)
 Scan: helloworld
@@ -117,7 +125,8 @@ Image: .\BUILD\NUCLEO_F429ZI\GCC_ARM\helloworld.bin
 ## 导出为其他IDE工具项目
 如果你需要进一步进行调试工作，你可以将源文件导出为其他IDE工具的项目文件。Mbed CLI支持导出为Keil uVision, IAR Workbench, 使用GCC Arm编译器的Makefile，使用GCC Arm编译器的Eclipse项目。
 例如导出为uVision，你可以如下操作。 
-```C:\helloworld>mbed export -i uvision -m NUCLEO_F429ZI
+```
+C:\helloworld>mbed export -i uvision -m NUCLEO_F429ZI
 [mbed] Auto-installing missing Python modules...
 Scan: helloworld
 ```
@@ -127,23 +136,28 @@ Mbed CLI直接在项目目录helloworld下生成helloworld.uvprojx与其他配�
 ![Keil uVision编译](./screenshots/uvision5_options_output_bin_file.jpg)
 ![Keil uVision编译](./screenshots/uvision5_compile_helloworld.jpg)<br>
 点击上图蓝圈内的Rebuild，进行编译，最后在项目目录下生成helloworld.bin目标代码，其他操作参考联机烧录。
-
-
 ## 管理多个Mbed项目
 Mbed CLI管理多个Mbed项目时，只需要在本地保留一套Mbed OS的源码，就可以让多个项目共享使用。
 ### 操作示例（目录位置可修改）
 #### 建立一个projects 文件夹
-```>C:\>mkdir projects
-C:\>cd projects```
+```
+>C:\>mkdir projects
+C:\>cd projects
+```
 #### 导入mbed-os，操作系统源码
-```C:\projects>mbed import mbed-os
+```
+C:\projects>mbed import mbed-os
 [mbed] Importing program "mbed-os" from "https://github.com/ARMmbed/mbed-os" at latest revision in the current branch
-[mbed] Auto-installing missing Python modules...```
+[mbed] Auto-installing missing Python modules...
+```
 #### 配置projects/mbed-os为全局变量MBED-OS-DIR
-```C:\projects>mbed config -G MBED_OS_DIR C:\projects\mbed-os
-[mbed] C:\projects\mbed-os now set as global MBED_OS_DIR```
+```
+C:\projects>mbed config -G MBED_OS_DIR C:\projects\mbed-os
+[mbed] C:\projects\mbed-os now set as global MBED_OS_DIR
+```
 #### 建立项目project*
-```C:\projects>mbed new project1
+```
+C:\projects>mbed new project1
 [mbed] Creating new program "project1" (git)
 [mbed] Auto-installing missing Python modules...
 
@@ -153,7 +167,8 @@ C:\projects>mbed new project2
 ```
 #### 添加应用程序的源码
 以project1项目为例，向project1目录里面添加一个main.cpp ，例如：helloworld闪灯程序。
-```#include "mbed.h"
+```
+#include "mbed.h"
 DigitalOut myled(PC_6);
 int main() {
     printf("Hello The wolrd!\n");
@@ -164,7 +179,8 @@ int main() {
 }
 ```
 #### 编译代码
-```C:\projects>mbed compile -t GCC_ARM -m NUCLEO_F429ZI --source project1 --source mbed-os --build BUILD/project1
+```
+C:\projects>mbed compile -t GCC_ARM -m NUCLEO_F429ZI --source project1 --source mbed-os --build BUILD/project1
 [mbed] WARNING: Could not find mbed program in current path "C:\projects".
 [mbed] WARNING: You can fix this by calling "mbed new ." in the root of your program.
 ---
