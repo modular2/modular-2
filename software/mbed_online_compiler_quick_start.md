@@ -7,7 +7,7 @@ Mbed Compiler的主要功能如下：
 + 代码导入，支持用户导入各种Mbed库及应用程序用于修改开发；
 + 代码编译，在线工具默认使用ARM RVDS进行编译，用户可以支持查看编译后flash和ram的使用情况；
 
-Mbed在线编译环境对于初学者而言十分方便，免去了许多开发环境的安装和配置，并且能方便地实现软件更新和发布，分享。
+Mbed在线编译器对于初学者而言十分方便，免去了许多开发环境的安装和配置，并且能方便地实现软件更新和发布，分享。
 ### 开始
 #### 申请Arm Mbed账号
 前往[os.mbed.com](https://os.mbed.com/)，注册申请[Arm Mbed账号](https://os.mbed.com/account/signup/)。
