@@ -41,16 +41,18 @@
 &ensp;&ensp;I/O 模块的尺寸为 74mmx80mm，通过2个16Pin 插座和1个40Pin。共计72Pin的PinBUS总线与主板连接，通过标准的工业接线端子与外部连接。我们针对各种应用场景，开发了丰富的I/O扩展板和网络连接板。同时，我们也鼓励和协助用户开发发挥自己技术专长和知识产权的I/O扩展板。 
 主要的IO模块包括： 
 
-+ 8 路数字IO板（单端MOS管输出） 
-+ 8 路数字IO板（差分晶体管输出） 
++ 8 路数字IO板（单端MOS管输入输出） 
++ 8 路数字IO板（差分晶体管输入输出） 
 + 8 路2~20mA 24bit 模拟量输入板 
 + 8 路+/- 10V 16bit 模拟输入板 
-+ 4路RS-485 通信板  
-+ 1路RS-485，1路 CANBus,1路RS232，1路 Profibus，1路 LIN 总线，1路SPI，1路I2C 
++ 4路RS-485/NMOS 数字输出驱动板  
++ 综合通信板 
+ 我们也鼓励和帮助客户针对自己的应用开发具有自己知识产权的IO模块。
+1路RS-485，1路 CANBus,1路RS232，1路 Profibus，1路 LIN 总线，1路SPI，1路I2C 
 ## 网络模块
 + WIFI 模块
-+ NB-iot 适合中国移动onenet,中国电信/华为 ocean connect
-+ LoRa 上海国动LoRa 网
++ NB-iot模块 适合中国移动onenet,中国电信/华为 ocean connect
++ LoRa模块 上海国动LoRa 网
 + GPRS/GPS 模块
 + RS-422 SerialDiary 模块
 + EtherDiary 模块 
