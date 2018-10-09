@@ -46,9 +46,9 @@
 + 8 路2~20mA 24bit 模拟量输入板 
 + 8 路+/- 10V 16bit 模拟输入板 
 + 4路RS-485/NMOS 数字输出驱动板  
-+ 综合通信板 
- 我们也鼓励和帮助客户针对自己的应用开发具有自己知识产权的IO模块。
-1路RS-485，1路 CANBus,1路RS232，1路 Profibus，1路 LIN 总线，1路SPI，1路I2C 
++ 综合通信板  
+    + 1路RS-485，1路 CANBus,1路RS232，1路 Profibus，1路 LIN 总线，1路SPI，1路I2C 
+ 
 ## 网络模块
 + WIFI 模块
 + NB-iot模块 适合中国移动onenet,中国电信/华为 ocean connect
