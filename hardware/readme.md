@@ -4,6 +4,8 @@
 - [关于modular-2](./aboutModular2.md)
 - [PCB 尺寸](./Modular2_Mechanial.md)
 # IO扩展板资料
+- [M2-DIO8-DRV8803 单端数字IO驱动模块](./M2-DIO8-DRV8803.md)
+- [M2-DIO8-HS 差分高速数字IO模块](./M2-DIO8-HS.md)
 - [M2-ADS1256-20mA 模块](./M2-ADS1256-20mA.md)
 - [M2-AD7689-10V 模块](./M2-AD7689-10V.md) 
 - [M2-RS485-DRV8803 模块](./M2-RS485-DRV8803.md)
