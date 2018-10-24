@@ -13,7 +13,13 @@ DigitalOut cs(PF_4);
 选择modular-2的SPI5。
 # 主板上使用的引脚
 + LED指示灯
+  + green LED PC_6
+  + red   LED PC_7
 + SD card
+   + SPI_MOSI     : PC_12 
+   + sd.SPI_MISO  : PC_11
+   + sd.SPI_CLK   : PC_10
+   + sd.SPI_CS    : PC_9
 + EEPROM
 # I/O扩展板引脚定义
 modular-2主板上有2个16Pin的插座(CN2，CN3)，1个40pin插座(CN1),它们构成了72pin的连接总线，称为pinBUS。pinBUS用于I/O接口模块的扩展。  
