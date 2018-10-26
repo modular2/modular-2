@@ -1,33 +1,41 @@
 # 概述
-&ensp;&ensp;在Mbed OS 中，应用程序员不需要对GPIO 端口和处理器芯片做底层初始化和配置。这些都由OS 为你完成了。这是非常方便的。虽然你不再需要了解更多的硬件细节，不过你需要通过MCU的硬件来选择处理器的外围电路。例如：
+在Mbed OS 中，应用程序员不需要对GPIO端口和处理器芯片做底层初始化和配置。这些都由操作系统为你完成。虽然你不再需要了解更多的硬件细节，但是你需要通过MCU的硬件来选择处理器的外围电路。<br>例如：
 ```
 DigitalOut green（PC_6); 
 DigitalOut red（PC_7); 
 ```
-选择了PC_6 引脚作为LED的绿灯。选择了PC_7 引脚作为LED的绿灯。 
+选择PC_6引脚作为LED的绿灯，选择PC_7引脚作为LED的红灯。 
 
 ```
 SPI spi(PF_9, PF_8, PF_7); // mosi, miso, sclk
 DigitalOut cs(PF_4);
 ```
-选择了STM32F429ZI 的SPI5.
-#主板上使用的引脚
+选择modular-2的SPI5。
+# 主板上使用的引脚
 + LED指示灯
+  + green LED PC_6
+  + red   LED PC_7
 + SD card
+   + SPI_MOSI     : PC_12 
+   + sd.SPI_MISO  : PC_11
+   + sd.SPI_CLK   : PC_10
+   + sd.SPI_CS    : PC_9
 + EEPROM
-# IO扩展板引脚定义
-modular-2 主板上有2个 16Pin的插座（CN2，CN3)，1个40pin 插座（CN1）,它们构成了72 pin 的连接总线，称为pinBUS。用于IO模块的扩展。  
-## 图标
-![pinCOMBUS](https://github.com/modular2/modular2/raw/master/images/pinref.png)
-## CN2，CN3 的pin定义
-![pinBUS](https://github.com/modular2/modular2/raw/master/images/PINBUS.png)
-## CN1 的pin定义
-![pinCOMBUS](https://github.com/modular2/modular2/raw/master/images/PINBUS2.png)
+# I/O扩展板引脚定义
+modular-2主板上有2个16Pin的插座(CN2，CN3)，1个40pin插座(CN1),它们构成了72pin的连接总线，称为pinBUS。pinBUS用于I/O接口模块的扩展。  
+## 图例
+![引脚图例](./images/Pins_Legend.png)
+## CN1引脚定义
+![CN1引脚定义](./images/CN1_HEADERS.png)
+## CN2引脚定义
+![CN2引脚定义](./images/CN2_HEADERS.png)
+## CN3引脚定义
+![CN3引脚定义](./images/CN3_HEADERS.png)
 # 网络扩展板引脚定义
-modular2上的网络扩展板有1个10pin 插座（CN4A），和一个12pin（CN4B）。  
-![pinCOMBUS](https://github.com/modular2/modular2/raw/master/images/pinCOMBUS.png)
-#引脚的引用
- 程序设计时，通过pinName 来定义外设。例如： 
+modular-2的网络扩展板有1个10pin插座(CN4A)，和一个12pin插座(CN4B)。  
+![CN4引脚定义](./images/CN4_HEADERS.png)
+# 引脚的引用
+Mbed程序设计时，通过pinName来定义外设。例如： 
 ```
 #include <mbed.h>
 DigitalOut green(PC_6);
@@ -37,5 +45,5 @@ main()
     wait(1);
 }
 ```
-每个IO模块都将说明它们所使用的相关pin，只有你了解了pin的定义才能够使用相关外围电路的类。
+每个IO模块都将说明它们所使用的相关引脚定义，只有你了解引脚定义，才能够调用相关外围电路的类。
 

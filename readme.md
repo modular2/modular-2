@@ -1,7 +1,7 @@
 # 关于modular-2
 &ensp;&ensp;modular-2 是一台基于cortex-M 处理器的模块化电脑，它由一块STM32F429 为主的主板和丰富的IO扩展板，网络扩展板，以及微型扩展模块构成。主板搭载Arm 公司Mbed OS 操作系统。该电脑功能比arduino 更强大，比树莓PI更方便地开发。该产品适用于快速开发小型智能设备，例如专用控制器，网关，大数据采集终端，物联网终端等。
 <br/>  
-![modular-2](https://github.com/modular2/modular2/raw/master/images/M-2.png)  
+![modular-2](./hardware/images/M-2.png)  
 ## 特点
  **易学，不费力气可以学会大多数功能**   
 &ensp;&ensp;设计modular-2时，我们受到了ardunio，树莓PI的启发，要设计一台初学者能够快速上手，有经验工程师得心应手的嵌入式设备。让使用者不费力气就可以使用大多数功能。其实ardunio已经达到了这个目的。事实上成千上万的学生使用arduino学习嵌入式程序设计和智能设备的开发。硬件工程师也使用这种廉价的电脑板搭试电路和产品原型。但是ardunio 只是一个AVR 8 位单片机为主的小电脑，处理能力还是十分有限，如果要使用到网络协议，SPI和复杂一点的程序就力不从心了。 
@@ -41,16 +41,18 @@
 &ensp;&ensp;I/O 模块的尺寸为 74mmx80mm，通过2个16Pin 插座和1个40Pin。共计72Pin的PinBUS总线与主板连接，通过标准的工业接线端子与外部连接。我们针对各种应用场景，开发了丰富的I/O扩展板和网络连接板。同时，我们也鼓励和协助用户开发发挥自己技术专长和知识产权的I/O扩展板。 
 主要的IO模块包括： 
 
-+ 8 路数字IO板（单端MOS管输出） 
-+ 8 路数字IO板（差分晶体管输出） 
++ 8 路数字IO板（单端MOS管输入输出） 
++ 8 路数字IO板（差分晶体管输入输出） 
 + 8 路2~20mA 24bit 模拟量输入板 
 + 8 路+/- 10V 16bit 模拟输入板 
-+ 4路RS-485 通信板  
-+ 1路RS-485，1路 CANBus,1路RS232，1路 Profibus，1路 LIN 总线，1路SPI，1路I2C 
++ 4路RS-485/NMOS 数字输出驱动板  
++ 综合通信板  
+    + 1路RS-485，1路 CANBus,1路RS232，1路 Profibus，1路 LIN 总线，1路SPI，1路I2C 
+ 
 ## 网络模块
 + WIFI 模块
-+ NB-iot 适合中国移动onenet,中国电信/华为 ocean connect
-+ LoRa 上海国动LoRa 网
++ NB-iot模块 适合中国移动onenet,中国电信/华为 ocean connect
++ LoRa模块 上海国动LoRa 网
 + GPRS/GPS 模块
 + RS-422 SerialDiary 模块
 + EtherDiary 模块 
